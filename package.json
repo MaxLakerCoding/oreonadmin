@@ -1,0 +1,23 @@
+{
+  "name": "oreonadmin",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "test"
+  ],
+  "homepage": "https://github.com/MaxLakerCoding/oreonadmin#readme",
+  "bugs": {
+    "url": "https://github.com/MaxLakerCoding/oreonadmin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxLakerCoding/oreonadmin.git"
+  },
+  "license": "ISC",
+  "author": "MaxLakerCoding",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
