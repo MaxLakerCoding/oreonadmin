@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+form{
+    box-sizing: border-box;
+    width: 55vw;
+    padding: 5vh;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #bfbfbf;
+    border-radius: 1.5em;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+
+    input[type="text"], input[type="number"]{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    select{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .divider{
+        width: 100%;
+        height: 0px;
+        border-top: 2px dashed #bfbfbf;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .tastes{
+        box-sizing: border-box;
+        width: 100%;
+        background: #a3edff;
+
+        .flexbox-spbtw{
+            box-sizing: border-box;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+
+            input[type="button"]{
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                font-size: 22px;
+            }
+        }  
+        
+        .new-taste{
+            box-sizing: border-box;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            gap: 15px;
+
+            input[type="file"]{
+                width: 250px;
+                height: 250px;
+                border: 2px transparent;
+                opacity: 0;
+            }
+
+            .inputfile{
+                width: 250px;
+                height: 250px;
+                background: #ffffff;
+                border: 2px dashed #89c8d7;
+                pointer-events: none;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 15px;
+                z-index: 0;
+
+                span{
+                    width: 50%;
+                    text-align: center;
+                    color: #89c8d7;
+                }
+            }
+
+            .output{
+                opacity: 0;
+                width: 250px;
+                height: 250.5px;
+                background: #ffffff;
+                pointer-events: none;
+                position: absolute;
+                top: 11.5px;
+                left: 11.5px;
+                z-index: 1;
+            }
+
+            .inputbox{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                gap: 5px;
+
+                input[type="text"], input[type="number"]{
+                    box-sizing: border-box;
+                    width: 100%;
+                    border: 1px solid #89c8d7;
+                }
+
+                .pricebox{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+                }
+
+                textarea{
+                    box-sizing: border-box;
+                    max-width: 100%;
+                    min-height: 118px;
+                    font-size: 16px;
+                    border: 1px solid #89c8d7;
+                    resize: vertical;
+                }
+            }
+        }
+    }
+
+
+    
+
+    textarea{
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        resize: vertical;
+    }
+}

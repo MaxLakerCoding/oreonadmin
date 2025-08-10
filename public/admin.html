@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreon AP</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <form name="addJuice" autocomplete="off" action="" method="post">
+        <input type="text" name="juiceName" id="juiceName" placeholder="Назва товару">
+
+        <select name="juiceType" id="juiceType">
+            <option value="" disabled selected hidden>Тип нікотину</option>
+            <option value="salt">Сольовий</option>
+            <option value="none">Без нікотину</option>
+        </select>
+
+
+       <input type="text" name="juiceManufacturer" id="juiceManufacturer" placeholder="Виробник">
+
+        <div class="divider"></div>
+
+        <div class="tastes">
+            <div class="flexbox-spbtw">
+                <span>Смаки</span>
+                <input type="button" value="+" onclick="addTaste()">
+            </div>
+
+            <!-- <div class="divider"></div>
+
+            <div class="new-taste">
+                <input type="file" name="" id="">
+
+                <div class="inputfile">
+                    <img src="./img/image.svg" alt="">
+                    <span>Натисніть щоб додати зображення</span>
+                </div>
+                <img src="" alt="" class="output">
+
+                <div class="inputbox">
+                    <input type="text" name="tasteName" placeholder="Назва смаку">
+                    <input type="number" name="tasteCount" placeholder="Кількість">
+
+                    <div class="pricebox">
+                        <input type="number" name="" id="" placeholder="Закупівельна">
+                        <input type="number" name="" id="" placeholder="Націнка (%)">
+                        <input type="number" name="" id="" placeholder="Підсумкова">
+                    </div>
+
+                    <textarea type="text" name="tasteFeels" id="tasteFeels" placeholder='Опишіть склад смаку через кому (наприклад: "Кавун, Диня")'></textarea>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="divider"></div>
+
+        <textarea type="text" name="juiceDescription" id="juiceDescription" placeholder="Опис"></textarea>
+
+        <input type="number" name="juiceVolume" id="juiceVolume" placeholder="Об'єм">
+    </form>
+</body>
+<script src="./scripts/form.js"></script>
+</html>
